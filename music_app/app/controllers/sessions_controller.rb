@@ -16,6 +16,7 @@ class SessionsController < ApplicationController
         )
 
         if user.nil?
+            user = User.new
             flash.now[:errors] = ["Incorrect email and/or password"]
             render :new
         else

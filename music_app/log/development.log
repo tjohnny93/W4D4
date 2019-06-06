@@ -309,3 +309,14 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 993ms (Views: 971.9ms | ActiveRecord: 5.8ms)
 
 
+Started POST "/users" for ::1 at 2019-06-06 14:55:51 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"david@david.david", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/0fdbfb067b526380/variables" for ::1 at 2019-06-06 14:55:52 -0700
