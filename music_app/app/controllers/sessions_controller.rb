@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
 
     def destroy
         logout_user!
+        session[:session_token] = nil
         redirect_to new_session_url
     end
 
