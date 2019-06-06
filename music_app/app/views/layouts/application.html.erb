@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <h1> Music App </h1>
+      <% if logged_in? %>
+        
+        <p>Logged in as: <%= current_user.email %> </p>
+
+      
+      <% end %>
     <%= yield %>
   </body>
 </html>
